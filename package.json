@@ -1,0 +1,17 @@
+{
+  "name": "nx-vitest-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": "23.x"
+  },
+  "workspaces": ["ui/packages/*"],
+  "scripts": {
+    "test": "nx run-many --target=test --all",
+    "test:watch": "nx run-many --target=test --all --watch"
+  },
+  "devDependencies": {
+    "nx": "20.4.4",
+    "vitest": "3.0.5"
+  }
+}
