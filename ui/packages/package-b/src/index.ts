@@ -1,3 +1,6 @@
+import { add } from '@ui/package-a'
+
 export function multiply(a: number, b: number): number {
-  return a * b;
+  const sum = add(...Array(b).fill(a)); // Add 'a' to itself 'b' times
+  return sum;
 }

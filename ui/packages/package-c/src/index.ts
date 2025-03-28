@@ -1,6 +1,6 @@
-export function divide(a: number, b: number): number {
-  if (b === 0) {
-    throw new Error('Division by zero');
-  }
-  return a / b;
+import { add } from './add';
+
+export function multiply(a: number, b: number): number {
+  const sum = add(...Array(b).fill(a));
+  return sum;
 }

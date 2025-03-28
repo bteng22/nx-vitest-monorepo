@@ -3,13 +3,17 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["test"]
+        "cacheableOperations": [
+          "test"
+        ]
       }
     }
   },
   "targetDefaults": {
     "test": {
-      "dependsOn": ["^test"]
+      "dependsOn": [
+        "^test"
+      ]
     }
   }
 }

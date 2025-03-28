@@ -5,13 +5,17 @@
   "engines": {
     "node": "23.x"
   },
-  "workspaces": ["ui/packages/*"],
+  "workspaces": [
+    "ui/packages/*"
+  ],
   "scripts": {
-    "test": "nx run-many --target=test --all",
-    "test:watch": "nx run-many --target=test --all --watch"
+    "test": "nx run-many --target=test --all --skip-nx-cache"
   },
   "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@vitest/browser": "3.0.5",
     "nx": "20.4.4",
+    "playwright": "^1.35.0",
     "vitest": "3.0.5"
   }
 }
